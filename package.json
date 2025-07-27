@@ -1,0 +1,17 @@
+{
+  "name": "foodweb",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "jest" , 
+    "start": "parcel src/index.html"  , 
+    "build": "parcel build index.html"
+  },
+  "author": "Rydham Mahajan",
+  "license": "ISC",
+  "dependencies": {
+    "parcel": "^2.15.4",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  }
+}

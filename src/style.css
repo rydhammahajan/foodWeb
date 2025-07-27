@@ -1,0 +1,6 @@
+/* Header */
+
+.nav-bar li{
+    list-style : none ; 
+    align-items: baseline;
+}
