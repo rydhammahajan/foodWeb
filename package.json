@@ -3,15 +3,25 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "test": "jest" , 
-    "start": "parcel src/index.html"  , 
-    "build": "parcel build index.html"
+    "test": "jest",
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html"
   },
   "author": "Rydham Mahajan",
   "license": "ISC",
   "dependencies": {
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3",
+    "react-router": "^7.11.0",
+    "react-router-dom": "^7.11.0"
+  },
+  "browserlist": [
+    "last 2 Chrome version"
+  ],
+  "devDependencies": {
+    "@parcel/transformer-raw": "^2.15.4",
+    "file-loader": "^6.2.0",
     "parcel": "^2.15.4",
-    "react": "^19.1.0",
-    "react-dom": "^19.1.0"
+    "url-loader": "^4.1.1"
   }
 }

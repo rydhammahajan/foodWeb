@@ -1,36 +1,39 @@
 /**
  * Components at the end of the day are nothing but the Javascript Functions returning JSX
  */
-import foodLogo from '../images/foodLogo.png';
+import { useState } from "react";
+import foodLogo from "../images/foodLogo.png";
+import NavBar from "./NavBar";
+
 const Header = ()=>{
 
-    // console.log(foodLogo) ;
-    console.log("Logo:", foodLogo, typeof foodLogo);
+    const [verticalNavBarOpen , setVerticalNavBarOpen] = useState(false) ; 
     return(
     <section id = "header">
 
-        <div className = "container-fluid col-12 d-flex justify-content-between align-items-baseline">
-            <div className="logo-container border">
-
+        <div className = "header-container container-fluid col-12 justify-content-between align-items-baseline px-5 box-shadow-effect">
+            <div className="logo-container">
                 <img src= {foodLogo} alt="logo" />
-
+            </div>
+            <div className="nav-bar d-none d-lg-block col-6 ">
+                <NavBar/>
             </div>
 
-            <div className="nav-bar col-6 ">
-                <ul className="d-flex justify-content-between border">
-                    <li><a><i className="fa-solid fa-house px-2 "></i>Home</a></li>
-                    <li><a><i className="fa-solid fa-utensils px-2"></i>Restaurant</a></li>
-                    <li><a><i className="fa-solid fa-circle-question px-2"></i>Help</a></li>
-                    <li><a><i className="fa-solid fa-cart-shopping px-2"></i>Cart</a></li>
-                </ul>
+            <div className="bar-icon d-lg-none">
+                    <i className ="fa-solid fa-bars orange-text" 
+                    onClick = {()=>{
+                        verticalNavBarOpen ? setVerticalNavBarOpen(false) : setVerticalNavBarOpen(true) ; 
+                    }} 
+                    ></i>
             </div>
         </div>
+
+        {verticalNavBarOpen ? (<div className="nav-bar-vertical py-4 " ><NavBar setVerticalNavBarOpen = {setVerticalNavBarOpen}/>
+        </div>) : <></>
+        }
     </section>
 
     )
-
-
-
 }
 
 export default Header ; 
