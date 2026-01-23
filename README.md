@@ -1,4 +1,3 @@
-```
 # 🍔 FoodWeb — React Food Ordering Application
 
 ![React](https://img.shields.io/badge/React-18-blue)
@@ -153,4 +152,3 @@ Frontend Developer | React | JavaScript
 This project is **not just a UI app** — it is built with **interview preparation, scalability, and best practices in mind**.
 
 If you find this useful, consider giving it a ⭐ on GitHub!
-```
