@@ -22,7 +22,7 @@ This project was intentionally built to:
 
 ## 🚀 Key Features
 
-- 🍽️ Menu listing with reusable components
+- 🍽️ Menu listing with reusable react components
 - 🛒 Add / remove items from cart
 - ➕ Increment / decrement item quantities
 - 💰 Real-time cart price calculation
