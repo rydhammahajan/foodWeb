@@ -6,7 +6,7 @@
 ![Status](https://img.shields.io/badge/Project-Interview%20Ready-success)
 
 FoodWeb is a **React-based food ordering web application** built to simulate **real-world machine coding round requirements**.  
-The project focuses on **clean component design, state management, and scalable frontend architecture**—not just UI.
+The project focuses on **clean component design, state management, and scalable frontend architecture**.
 
 ---
 
